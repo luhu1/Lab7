@@ -5,7 +5,18 @@ export const router = {};
 /**
  * Changes the "page" (state) that your SPA app is currently set to
  */
-router.setState = function() {
+ 
+ document.querySelector("img").addEventListener("click",function (){
+   router.setState("settings",false);
+   document.querySelector("body").classList.add("settings");
+   document.querySelector("h1").innerHTML="Settings";
+ });
+ 
+ document.querySelector("h1").addEventListener("click",function(){
+  router.setState("homepage",false);
+ });
+
+ router.setState = function(id,isPop) { 
   /**
    * - There are three states that your SPA app will have
    *    1. The home page
@@ -35,4 +46,109 @@ router.setState = function() {
    *    1. You may add as many helper functions in this file as you like
    *    2. You may modify the parameters of setState() as much as you like
    */
+
+  //pushState handles navigation
+  if(id=="homepage"){
+    if(!isPop){
+       history.pushState({page: "homepage"},"homepage","http://127.0.0.1:5500/");
+    }
+    
+    this.className="body";
+    // document.querySelector("entry-page").removeChild
+    document.querySelector("body").className="jounal-entry";
+    document.querySelector("h1").innerHTML="Journal Entry";
+  }
+  if(id=="settings"){
+    if(!isPop){
+      history.pushState({page: "settings"},"settings","http://127.0.0.1:5500/#settings");
+    }
+    
+    document.querySelector("body").className="settings";
+    document.querySelector("h1").innerHTML="Settings";
+  }
+  if(id=="4/25/2021"){
+    if(!isPop){
+      history.pushState({page: "4/25/2021"},"entry 1","http://127.0.0.1:5500/#entry1");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 1";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="4/26/2021"){
+    if(!isPop){
+      history.pushState({page: "4/26/2021"},"entry 2","http://127.0.0.1:5500/#entry2");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 2";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="4/27/2021"){
+    if(!isPop){
+      history.pushState({page: "4/27/2021"},"entry 3","http://127.0.0.1:5500/#entry3");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 3";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="4/28/2021"){
+    if(!isPop){
+      history.pushState({page: "4/28/2021"},"entry 4","http://127.0.0.1:5500/#entry4");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 4";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="4/29/2021"){
+    if(!isPop){
+      history.pushState({page: "4/29/2021"},"entry 5","http://127.0.0.1:5500/#entry5");
+    }
+   
+    document.querySelector("h1").innerHTML="Entry 5";
+    document.querySelector("body").className="single-entry";
+
+  }
+  if(id=="4/30/2021"){
+    if(!isPop){
+      history.pushState({page: "4/30/2021"},"entry 6","http://127.0.0.1:5500/#entry6");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 6";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="5/1/2021"){
+    if(!isPop){
+      
+    history.pushState({page: 9},"entry 7","http://127.0.0.1:5500/#entry7");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 7";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="5/2/2021"){
+    if(!isPop){
+      history.pushState({page: 10},"entry 8","http://127.0.0.1:5500/#entry8");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 8";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="5/3/2021"){
+    if(!isPop){
+      history.pushState({page: 11},"entry 9","http://127.0.0.1:5500/#entry9");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 9";
+    document.querySelector("body").className="single-entry";
+  }
+  if(id=="5/4/2021"){
+    if(!isPop){
+      history.pushState({page: 12},"settings","http://127.0.0.1:5500/#entry10");
+    }
+    
+    document.querySelector("h1").innerHTML="Entry 10";
+    document.querySelector("body").className="single-entry";
+  }
+  
+
+  // create a function that changes title and apply a section of css 
 }
