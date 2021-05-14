@@ -50,7 +50,7 @@ export const router = {};
   //pushState handles navigation
   if(id=="homepage"){
     if(!isPop){
-       history.pushState({page: "homepage"},"homepage","http://127.0.0.1:5500/");
+       history.pushState({page: "homepage"},"homepage","https://luhu1.github.io/Lab7/");
     }
     
     this.className="body";
@@ -60,7 +60,7 @@ export const router = {};
   }
   if(id=="settings"){
     if(!isPop){
-      history.pushState({page: "settings"},"settings","http://127.0.0.1:5500/#settings");
+      history.pushState({page: "settings"},"settings","https://luhu1.github.io/Lab7/#settings");
     }
     
     document.querySelector("body").className="settings";
@@ -68,7 +68,7 @@ export const router = {};
   }
   if(id=="4/25/2021"){
     if(!isPop){
-      history.pushState({page: "4/25/2021"},"entry 1","http://127.0.0.1:5500/#entry1");
+      history.pushState({page: "4/25/2021"},"entry 1","https://luhu1.github.io/Lab7/#entry1");
     }
     
     document.querySelector("h1").innerHTML="Entry 1";
@@ -76,7 +76,7 @@ export const router = {};
   }
   if(id=="4/26/2021"){
     if(!isPop){
-      history.pushState({page: "4/26/2021"},"entry 2","http://127.0.0.1:5500/#entry2");
+      history.pushState({page: "4/26/2021"},"entry 2","https://luhu1.github.io/Lab7/#entry2");
     }
     
     document.querySelector("h1").innerHTML="Entry 2";
@@ -84,7 +84,7 @@ export const router = {};
   }
   if(id=="4/27/2021"){
     if(!isPop){
-      history.pushState({page: "4/27/2021"},"entry 3","http://127.0.0.1:5500/#entry3");
+      history.pushState({page: "4/27/2021"},"entry 3","https://luhu1.github.io/Lab7/#entry3");
     }
     
     document.querySelector("h1").innerHTML="Entry 3";
@@ -92,7 +92,7 @@ export const router = {};
   }
   if(id=="4/28/2021"){
     if(!isPop){
-      history.pushState({page: "4/28/2021"},"entry 4","http://127.0.0.1:5500/#entry4");
+      history.pushState({page: "4/28/2021"},"entry 4","https://luhu1.github.io/Lab7/#entry4");
     }
     
     document.querySelector("h1").innerHTML="Entry 4";
@@ -100,7 +100,7 @@ export const router = {};
   }
   if(id=="4/29/2021"){
     if(!isPop){
-      history.pushState({page: "4/29/2021"},"entry 5","http://127.0.0.1:5500/#entry5");
+      history.pushState({page: "4/29/2021"},"entry 5","https://luhu1.github.io/Lab7/#entry5");
     }
    
     document.querySelector("h1").innerHTML="Entry 5";
@@ -109,7 +109,7 @@ export const router = {};
   }
   if(id=="4/30/2021"){
     if(!isPop){
-      history.pushState({page: "4/30/2021"},"entry 6","http://127.0.0.1:5500/#entry6");
+      history.pushState({page: "4/30/2021"},"entry 6","https://luhu1.github.io/Lab7/#entry6");
     }
     
     document.querySelector("h1").innerHTML="Entry 6";
@@ -118,7 +118,7 @@ export const router = {};
   if(id=="5/1/2021"){
     if(!isPop){
       
-    history.pushState({page: 9},"entry 7","http://127.0.0.1:5500/#entry7");
+    history.pushState({page: 9},"entry 7","https://luhu1.github.io/Lab7/#entry7");
     }
     
     document.querySelector("h1").innerHTML="Entry 7";
@@ -126,7 +126,7 @@ export const router = {};
   }
   if(id=="5/2/2021"){
     if(!isPop){
-      history.pushState({page: 10},"entry 8","http://127.0.0.1:5500/#entry8");
+      history.pushState({page: 10},"entry 8","https://luhu1.github.io/Lab7/#entry8");
     }
     
     document.querySelector("h1").innerHTML="Entry 8";
@@ -134,7 +134,7 @@ export const router = {};
   }
   if(id=="5/3/2021"){
     if(!isPop){
-      history.pushState({page: 11},"entry 9","http://127.0.0.1:5500/#entry9");
+      history.pushState({page: 11},"entry 9","https://luhu1.github.io/Lab7/#entry9");
     }
     
     document.querySelector("h1").innerHTML="Entry 9";
@@ -142,7 +142,7 @@ export const router = {};
   }
   if(id=="5/4/2021"){
     if(!isPop){
-      history.pushState({page: 12},"settings","http://127.0.0.1:5500/#entry10");
+      history.pushState({page: 12},"settings","https://luhu1.github.io/Lab7/#entry10");
     }
     
     document.querySelector("h1").innerHTML="Entry 10";
